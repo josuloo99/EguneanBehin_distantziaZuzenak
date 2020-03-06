@@ -55,7 +55,7 @@ def galderakSortu(datuak, emaitza):
 	for _ in range(100): #100 aldiz
 		izena1, izena2, dist = biHerriLortu(datuak) #Datuetatik bi herri eta haien arteko distantzia lortu.
 		ok1, ok2 = okerrak(dist) #Erantzun okerrak kalkulatu erantzun zuzenaren arabera
-		herriakCSV.write("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s" % ('Distantziak', 'Zein da '+izena1+' eta '+izena2+' herrien arteko distantzia zuzena?','',dist,ok1,ok2,'','','Josu Loidi','\n')) #CSV fitxategian galdera sortu
+		herriakCSV.write("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s" % ('Distantziak', 'Zein da '+izena1+' eta '+izena2+' herrien arteko distantzia zuzena?','',dist+"km",ok1+"km",ok2+"km",'','','Josu Loidi / Alex de Miguel','\n')) #CSV fitxategian galdera sortu
 
 	herriakCSV.close()
 
